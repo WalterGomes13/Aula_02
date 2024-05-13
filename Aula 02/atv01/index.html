@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Atividade 2
+        var peso = parseFloat(prompt("Digite o seu peso em Kg: "))
+        var altura = parseFloat(prompt("Digite a sua altura em metros: "))
+        var imc = (peso/(altura^2))
+        if (imc<18.5){
+            console.log(`O imc é de ${imc}`)
+            console.log(`O indivíduo está abaixo do peso`)
+        }
+
+        else if(imc>=18.5 && imc<=24.99){
+            console.log(`O imc é de ${imc}`)
+            console.log(`O indivíduo está normal`)
+        }
+
+        else if(imc>=25 && imc<=29.99){
+            console.log(`O imc é de ${imc}`)
+            console.log(`O indivíduo está em sobrepeso`)
+        }
+
+        else {
+            console.log(`O imc é de ${imc}`)
+            console.log(`O indivíduo está obeso`)
+        }
+    </script>
+</body>
+</html>
